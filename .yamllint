@@ -1,6 +1,6 @@
 ---
 ignore: |
-  config/AdguardHome.yaml
+  /config/AdGuardHome.yaml
 
 rules:
   braces: enable
