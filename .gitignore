@@ -1,4 +1,3 @@
 prd-adguard-home-app.env
 /workdir/data/*.db
 /workdir/data/querylog.json*
-/workdir/data/filters/*.txt
