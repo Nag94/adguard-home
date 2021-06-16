@@ -1,8 +1,6 @@
 ---
 ignore: |
-  config/custom_components/
-  config/blueprints/
-  config/ip_bans.yaml
+  config/AdguardHome.yaml
 
 rules:
   braces: enable

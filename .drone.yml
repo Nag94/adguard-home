@@ -5,7 +5,6 @@ name: validate
 steps:
   - name: lint
     image: sdesbure/yamllint:latest
-    failure: ignore
     commands:
       - yamllint -c ./.yamllint .
 
