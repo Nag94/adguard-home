@@ -34,7 +34,7 @@ dns:
   upstream_dns:
   - '# FORWARD ONLY STAM.LAN TO DNSMASQ'
   - '[/stam.lan/]tcp://prd-dnsmasq-app'
-  - '# FORWARD ONLY DOCKER.LAN TO DNSMASQ'
+  - '# FORWARD ONLY .DOCKER TO DNSMASQ'
   - '[/docker/]tcp://prd-dnsmasq-app'
   - '# FORWARD ALL REQUESTS TO DNSMASQ'
   - '#tcp://prd-dnsmasq-app'
