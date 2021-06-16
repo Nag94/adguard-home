@@ -1,0 +1,29 @@
+---
+version: "3.8"
+services:
+
+  prd-adguard-home-app:
+    image: docker-registry.theautomation.nl/coen/prd-adguard-home-app:latest
+    container_name: prd-adguard-home-app
+    restart: unless-stopped
+    env_file: prd-adguard-home-app.env
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "3000:3000/tcp"
+      - "853:853/tcp"
+    networks:
+      - home-services
+    volumes:
+      - ./config:/opt/adguardhome/conf
+      - ./workdir:/opt/adguardhome/work
+
+# NETWORKS
+networks:
+
+  home-services:
+    driver: bridge
+    name: home-services
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
