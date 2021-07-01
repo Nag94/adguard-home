@@ -5,4 +5,4 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/theautomation/adguard-home?logo=github)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/theautomation/adguard-home/main?logo=github)
 
-[Adguard Home](https://github.com/AdguardTeam/AdGuardHome/): A network-wide software for blocking ads & tracking. It'll cover all my home devices, it also upstream my local domain requests to [dnsmasq](https://github.com/theautomation/dnsmasq)for DNS resolving.
+[Adguard Home](https://github.com/AdguardTeam/AdGuardHome/): A network-wide software for blocking ads & tracking. It'll cover all my home devices, it also upstream my local domain requests to [dnsmasq](https://github.com/theautomation/dnsmasq) for DNS resolving.
