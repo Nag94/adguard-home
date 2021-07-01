@@ -1,4 +1,4 @@
-FROM adguard/adguardhome:latest
+FROM adguard/adguardhome:v0.106.3
 
 COPY /config/* /opt/adguardhome/conf/
 
