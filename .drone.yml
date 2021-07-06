@@ -23,7 +23,8 @@ steps:
     image: adguard/adguardhome:latest
     pull: always
     commands:
-      - cd /opt/adguardhome && ./AdGuardHome --check-config
+      - cd /opt/adguardhome
+      - ./AdGuardHome --check-config
 
 ---
 kind: pipeline
