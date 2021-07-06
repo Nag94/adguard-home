@@ -15,7 +15,7 @@ services:
     networks:
       - home-services
     volumes:
-      - ./config:/opt/adguardhome/conf
+      #- ./config:/opt/adguardhome/conf
       - prd-adguard-home-app-work:/opt/adguardhome/work
 
 # VOLUMES
