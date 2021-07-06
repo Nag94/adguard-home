@@ -25,6 +25,7 @@ steps:
     commands:
       - cd /opt/adguardhome
       - ./AdGuardHome --version
+      - ./AdGuardHome --check-config
 
 ---
 kind: pipeline
