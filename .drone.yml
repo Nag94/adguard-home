@@ -24,7 +24,7 @@ steps:
     pull: always
     commands:
       - cd /opt/adguardhome
-      - ./AdGuardHome --check-config
+      - ./AdGuardHome --version
 
 ---
 kind: pipeline
