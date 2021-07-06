@@ -23,7 +23,7 @@ steps:
     image: adguard/adguardhome:latest
     pull: always
     commands:
-      - cp /config/AdGuardHome.yaml /opt/adguardhome/conf/AdGuardHome.yaml
+      - cp config/AdGuardHome.yaml /opt/adguardhome/conf/AdGuardHome.yaml
       - cd /opt/adguardhome
       - ./AdGuardHome -c /opt/adguardhome/conf/AdGuardHome.yaml --check-config
 
