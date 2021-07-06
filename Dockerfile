@@ -1,6 +1,6 @@
 FROM adguard/adguardhome:v0.106.3
 
-COPY /config/* /opt/adguardhome/conf/
+COPY config/* /opt/adguardhome/conf/
 
 COPY /workdir/* /opt/adguardhome/work/
 
