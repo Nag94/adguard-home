@@ -23,9 +23,9 @@ steps:
     image: adguard/adguardhome:latest
     pull: always
     commands:
+      - cp /config/AdGuardHome.yaml /opt/adguardhome/conf/AdGuardHome.yaml
       - cd /opt/adguardhome
-      - ./AdGuardHome --version
-      - ./AdGuardHome --check-config
+      - ./AdGuardHome -c /opt/adguardhome/conf/AdGuardHome.yaml --check-config
 
 ---
 kind: pipeline
