@@ -32,6 +32,7 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
+    # TESTING
   - '# FORWARD ONLY STAM.LAN TO DNSMASQ'
   - '[/stam.lan/]tcp://prd-dnsmasq-app'
   - '# FORWARD ONLY .DOCKER TO DNSMASQ'

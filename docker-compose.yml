@@ -3,7 +3,8 @@ version: "3.8"
 services:
 
   prd-adguard-home-app:
-    image: docker-registry.theautomation.nl/coen/prd-adguard-home-app:latest
+    #image: docker-registry.theautomation.nl/coen/prd-adguard-home-app:latest
+    image: test:latest
     container_name: prd-adguard-home-app
     restart: unless-stopped
     env_file: prd-adguard-home-app.env
