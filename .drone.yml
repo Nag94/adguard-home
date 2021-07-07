@@ -71,20 +71,9 @@ steps:
       script:
         - cd /home/coen/docker-home-services/${DRONE_REPO_NAME}/
         - git pull
+        - docker-compose stop
+        - docker-compose rm -f
         - docker-compose pull
-
-  - name: deploy
-    image: appleboy/drone-ssh
-    settings:
-      host:
-        from_secret: ssh_host
-      username:
-        from_secret: ssh_user
-      password:
-        from_secret: ssh_password
-      port: 22
-      script:
-        - cd /home/coen/docker-home-services/${DRONE_REPO_NAME}/
         - docker-compose up -d
 
   - name: clean
