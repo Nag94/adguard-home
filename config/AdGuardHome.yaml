@@ -32,7 +32,6 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
-    # TESTING
   - '# FORWARD ONLY STAM.LAN TO DNSMASQ'
   - '[/stam.lan/]tcp://prd-dnsmasq-app'
   - '# FORWARD ONLY .DOCKER TO DNSMASQ'
@@ -40,6 +39,7 @@ dns:
   - '# FORWARD ALL REQUESTS TO DNSMASQ'
   - '#tcp://prd-dnsmasq-app'
   - '#CLOUDFLARE'
+  - '#TESTINGTESTINGTESTINGTESTINTESTINGTESTINGTESTING'
   - 1.1.1.1
   - '#GOOGLE'
   - 8.8.4.4
