@@ -19,7 +19,7 @@ kind: pipeline
 name: test
 
 steps:
-  - name: latest
+  - name: check config
     image: adguard/adguardhome:latest
     pull: always
     commands:
