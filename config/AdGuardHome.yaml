@@ -104,17 +104,9 @@ filters:
   name: AdAway Default Blocklist
   id: 2
 - enabled: true
-  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
-  name: MalwareDomainList.com Hosts List
-  id: 4
-- enabled: true
   url: https://someonewhocares.org/hosts/zero/hosts
   name: Dan Pollock's List
   id: 1605876424
-- enabled: true
-  url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
-  name: Game Console Adblock List
-  id: 1605876425
 - enabled: true
   url: https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
   name: Perflyst and Dandelion Sprout's Smart-TV Blocklist
@@ -151,6 +143,18 @@ filters:
   url: https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers-all.txt
   name: bigdargon
   id: 1605876434
+- enabled: true
+  url: https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts
+  name: The Big List of Hacked Malware Web Sites
+  id: 1626202888
+- enabled: true
+  url: https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt
+  name: Online Malicious URL Blocklist
+  id: 1626202889
+- enabled: true
+  url: https://raw.githubusercontent.com/blocklistproject/Lists/master/adguard/everything-ags.txt
+  name: all - Hugh List
+  id: 1626202892
 whitelist_filters: []
 user_rules:
 - ""
