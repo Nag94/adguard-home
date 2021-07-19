@@ -151,12 +151,14 @@ filters:
   url: https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt
   name: Online Malicious URL Blocklist
   id: 1626202889
-- enabled: true
-  url: https://raw.githubusercontent.com/blocklistproject/Lists/master/adguard/everything-ags.txt
-  name: all - Hugh List
-  id: 1626202892
 whitelist_filters: []
 user_rules:
+- '@@||hub.docker.com^$important'
+- '@@||rarbg.to^$important'
+- '@@||home.myharmony.com^$important'
+- '@@||svcs.myharmony.com^$important'
+- '@@||logging.dhg.myharmony.com^$important'
+- '@@||sus.dhg.myharmony.com^$important'
 - ""
 dhcp:
   enabled: false
