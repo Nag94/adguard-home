@@ -20,7 +20,6 @@ services:
 
 # VOLUMES
 volumes:
-
   prd-adguard-home-app-work:
     name: prd-adguard-home-app-work
 
