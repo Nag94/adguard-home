@@ -15,10 +15,10 @@ dns:
   bind_hosts:
   - 0.0.0.0
   port: 53
-  statistics_interval: 7
+  statistics_interval: 1
   querylog_enabled: true
   querylog_file_enabled: true
-  querylog_interval: 7
+  querylog_interval: 1
   querylog_size_memory: 1000
   anonymize_client_ip: false
   protection_enabled: true
@@ -62,7 +62,7 @@ dns:
   bogus_nxdomain: []
   aaaa_disabled: true
   enable_dnssec: false
-  edns_client_subnet: false
+  edns_client_subnet: true
   max_goroutines: 300
   ipset: []
   filtering_enabled: true
@@ -162,13 +162,13 @@ user_rules:
 - ""
 dhcp:
   enabled: false
-  interface_name: ens33
+  interface_name: ""
   dhcpv4:
-    gateway_ip: 192.168.1.1
-    subnet_mask: 255.255.255.0
-    range_start: 192.168.1.10
-    range_end: 192.168.1.240
-    lease_duration: 8640
+    gateway_ip: ""
+    subnet_mask: ""
+    range_start: ""
+    range_end: ""
+    lease_duration: 0
     icmp_timeout_msec: 1000
     options: []
   dhcpv6:
