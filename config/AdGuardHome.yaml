@@ -22,7 +22,7 @@ dns:
   querylog_size_memory: 1000
   anonymize_client_ip: false
   protection_enabled: true
-  blocking_mode: default
+  blocking_mode: refused
   blocking_ipv4: ""
   blocking_ipv6: ""
   blocked_response_ttl: 10
@@ -71,7 +71,6 @@ dns:
   resolve_clients: true
   local_ptr_upstreams:
   - 192.168.1.1
-  - 172.20.0.1
 tls:
   enabled: false
   server_name: ""
@@ -156,6 +155,22 @@ filters:
   url: https://orca.pet/notonmyshift/hosts.txt
   name: orca.pet
   id: 1630757200
+- enabled: true
+  url: https://abp.oisd.nl/
+  name: abp.oisd
+  id: 1631656434
+- enabled: true
+  url: https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/670495b2e1e4cbed44cee0d158e97a75a6437982/Blocklist/filter_blocklist1.txt
+  name: hl2guide 1
+  id: 1631656435
+- enabled: true
+  url: https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/670495b2e1e4cbed44cee0d158e97a75a6437982/Blocklist/filter_blocklist2.txt
+  name: hl2guide 2
+  id: 1631656436
+- enabled: true
+  url: https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/670495b2e1e4cbed44cee0d158e97a75a6437982/Blocklist/filter_blocklist3.txt
+  name: hl2guide 3
+  id: 1631656437
 whitelist_filters: []
 user_rules:
 - '@@||hub.docker.com^$important'
@@ -164,6 +179,11 @@ user_rules:
 - '@@||svcs.myharmony.com^$important'
 - '@@||logging.dhg.myharmony.com^$important'
 - '@@||sus.dhg.myharmony.com^$important'
+- '@@||api.ipify.org^$important'
+- '@@||android.life360.com^$important'
+- '@@||pfsense.lan^$important'
+- '@@||dit.whatsapp.net^$important'
+- '@@||android.googleapis.com^$important'
 - ""
 dhcp:
   enabled: false
