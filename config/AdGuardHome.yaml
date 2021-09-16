@@ -159,15 +159,15 @@ filters:
   url: https://abp.oisd.nl/
   name: abp.oisd
   id: 1631656434
-- enabled: true
+- enabled: false
   url: https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/670495b2e1e4cbed44cee0d158e97a75a6437982/Blocklist/filter_blocklist1.txt
   name: hl2guide 1
   id: 1631656435
-- enabled: true
+- enabled: false
   url: https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/670495b2e1e4cbed44cee0d158e97a75a6437982/Blocklist/filter_blocklist2.txt
   name: hl2guide 2
   id: 1631656436
-- enabled: true
+- enabled: false
   url: https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard-or-PiHole/670495b2e1e4cbed44cee0d158e97a75a6437982/Blocklist/filter_blocklist3.txt
   name: hl2guide 3
   id: 1631656437
