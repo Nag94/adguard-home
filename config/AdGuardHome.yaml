@@ -184,6 +184,8 @@ user_rules:
 - '@@||pfsense.lan^$important'
 - '@@||dit.whatsapp.net^$important'
 - '@@||android.googleapis.com^$important'
+- '@@||vortex.data.microsoft.com^$important'
+- '@@||github.com^$important'
 - ""
 dhcp:
   enabled: false
