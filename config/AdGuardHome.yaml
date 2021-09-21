@@ -186,6 +186,7 @@ user_rules:
 - '@@||android.googleapis.com^$important'
 - '@@||vortex.data.microsoft.com^$important'
 - '@@||github.com^$important'
+- '@@||www.googletagmanager.com^$important'
 - ""
 dhcp:
   enabled: false
@@ -203,7 +204,21 @@ dhcp:
     lease_duration: 0
     ra_slaac_only: false
     ra_allow_slaac: false
-clients: []
+clients:
+- name: docker-host
+  tags: []
+  ids:
+  - 172.20.0.1
+  - docker-host
+  use_global_settings: false
+  filtering_enabled: false
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  use_global_blocked_services: true
+  blocked_services: []
+  upstreams:
+  - 192.168.1.1
 log_compress: false
 log_localtime: false
 log_max_backups: 0
