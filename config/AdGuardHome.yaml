@@ -187,6 +187,7 @@ user_rules:
 - '@@||vortex.data.microsoft.com^$important'
 - '@@||github.com^$important'
 - '@@||www.googletagmanager.com^$important'
+- '@@||beacons.gvt2.com^$important'
 - ""
 dhcp:
   enabled: false
