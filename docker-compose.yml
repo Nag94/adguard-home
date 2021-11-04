@@ -8,10 +8,10 @@ services:
     restart: unless-stopped
     env_file: prd-adguard-home-app.env
     ports:
-      - "53:53/tcp"
-      - "53:53/udp"
-      - "3000:3000/tcp" # exposed for home assistant
-      - "853:853/tcp"
+      - 53:53/tcp
+      - 53:53/udp
+      - 3000:3000/tcp #exposed for home assistant
+      #- 853:853/tcp
     networks:
       - reverse-proxy
       - home-services
