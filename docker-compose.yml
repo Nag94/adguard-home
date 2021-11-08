@@ -1,7 +1,6 @@
 ---
 version: "3.8"
 services:
-
   prd-adguard-home-app:
     image: docker-registry.theautomation.nl/coen/prd-adguard-home-app:latest
     container_name: prd-adguard-home-app
