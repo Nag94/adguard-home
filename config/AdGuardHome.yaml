@@ -188,6 +188,7 @@ user_rules:
 - '@@||github.com^$important'
 - '@@||www.googletagmanager.com^$important'
 - '@@||beacons.gvt2.com^$important'
+- '@@||mobile.launchdarkly.com^$important'
 - ""
 dhcp:
   enabled: false
