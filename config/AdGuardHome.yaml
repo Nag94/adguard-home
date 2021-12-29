@@ -190,7 +190,6 @@ user_rules:
 - '@@||beacons.gvt2.com^$important'
 - '@@||mobile.launchdarkly.com^$important'
 - '@@||daisy.ubuntu.com^$important'
-- ""
 dhcp:
   enabled: false
   interface_name: ""
